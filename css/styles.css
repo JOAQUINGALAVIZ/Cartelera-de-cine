@@ -8,6 +8,7 @@ body{
         justify-content: center;
         height: 100vh;
         background-size: cover;
+        text-align: center;
 } 
 
 
@@ -49,9 +50,6 @@ footer {
 }
 
       
-
-     
-
      
 
 .navbar ul {
@@ -71,6 +69,19 @@ footer {
 
      
 
-     
-     
-      
+
+.cartelera img {
+    width: 200px;
+    transition: transform 0.5s;
+    transform-origin: center;
+
+}
+
+
+.cartelera:hover img {
+    transform: rotatey(360deg);
+}
+
+.sinopsis{
+        text-align: center;
+}
