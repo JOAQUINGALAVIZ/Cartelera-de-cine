@@ -16,7 +16,7 @@ body{
 .header {
         background-color: rgba(255, 0, 0, 0.192);
         text-align: center;
-        line-height: 30px;
+        line-height: 80px;
         color: rgb(0, 0, 0);
         border-bottom: 3px dashed black;
 }
@@ -53,9 +53,10 @@ footer {
      
 
 .navbar ul {
+
         list-style: none;
-        margin: 0;
-        padding: 0;
+        margin: 1;
+        padding: 1;
 }
 
     
