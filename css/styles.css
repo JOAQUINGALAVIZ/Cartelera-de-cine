@@ -11,6 +11,10 @@ body{
         text-align: center;
 } 
 
+.clearfix {
+        clear: both;
+}
+
 div {
         padding-top: 10px;
         padding-right: 20px;
@@ -52,12 +56,7 @@ div {
 
 }
 
-footer {
-        text-align: center;
-        background-color: #a30808a6;
-        color: #fff;
-        padding: 10px;
-}
+
 
       
      
