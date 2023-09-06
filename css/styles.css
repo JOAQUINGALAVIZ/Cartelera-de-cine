@@ -26,7 +26,7 @@ div {
         background-color: rgba(255, 0, 0, 0.192);
         text-align: center;
         line-height: 30px;
-        color: wheat;
+        color: rgb(0, 0, 0);
         border-bottom: 3px dashed black;
 }
 
