@@ -9,6 +9,8 @@ body{
         height: 100vh;
         background-size: cover;
         text-align: center;
+        
+        
 } 
 
 .clearfix {
@@ -92,6 +94,8 @@ div {
     transform: rotatey(360deg);
 }
 
-.sinopsis{
+.peliculas1{
         text-align: center;
+        color:#fff;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
