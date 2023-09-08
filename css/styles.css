@@ -1,7 +1,7 @@
 body{
         background-color: rgb(0, 0, 0);
         font-family: 'Times New Roman', Times, serif;
-        color: rgb(211, 208, 208);
+        color: rgb(255, 255, 255);
         margin:0;
         padding: 0;
         align-items: center;
@@ -13,9 +13,6 @@ body{
         
 } 
 
-.clearfix {
-        clear: both;
-}
 
 div {
         padding-top: 10px;
@@ -94,12 +91,6 @@ div {
     transform: rotatey(360deg);
 }
 
-.pelicula1{
-        text-align: center;
-        color:#48ee6c;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
 .social{
         display: grid;
         grid-template-columns: auto;
@@ -112,3 +103,4 @@ div {
         text-decoration: none;
         list-style: none;
     }
+
