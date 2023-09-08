@@ -99,3 +99,16 @@ div {
         color:#48ee6c;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
+.social{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .redes{
+        display: flex;
+        gap: 18rem;
+    }
+    .redes li{
+        text-decoration: none;
+        list-style: none;
+    }
