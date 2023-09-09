@@ -104,3 +104,10 @@ div {
         list-style: none;
     }
 
+
+    body{
+        font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
+        background-attachment: #f0f0f0;
+        margin: 0;
+        padding: 0;
+    }
