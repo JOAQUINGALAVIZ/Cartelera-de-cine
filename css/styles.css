@@ -39,11 +39,7 @@ div {
         cursor: pointer;
 }
 
-.logo {
-        font-size: 30px;
-        text-decoration: none;
-        color: #fff;
-}
+
 
 .container {
         max-width: 1200px;
@@ -95,12 +91,83 @@ div {
         display: grid;
         grid-template-columns: auto;
     }
-    .redes{
+
+.redes{
         display: flex;
         gap: 18rem;
     }
-    .redes li{
+.redes li{
         text-decoration: none;
         list-style: none;
     }
 
+
+
+/*Logo*/
+@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
+
+h1 {
+  font-size: calc(20px + 4vh);
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  font-family: "Sacramento", cursive;
+  text-align: center;
+  animation: blink 1s infinite;
+  -webkit-animation: blink 1s infinite;
+}
+
+a {
+        font-size: calc(10px + 2vh);
+        text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+          color: #fff6a9;
+        font-family: "Sacramento", cursive;
+        text-align: center;
+        animation: blink 1s infinite;
+        -webkit-animation: blink 1s infinite;
+      }
+      
+
+@-webkit-keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  }
+}
+
+@keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  }
+}
+/*Logo*/
