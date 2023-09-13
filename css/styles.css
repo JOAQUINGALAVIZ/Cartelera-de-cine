@@ -12,7 +12,16 @@ body{
         
         
 } 
-
+.pie {
+        display: inline-block;
+        background-color: #8b0303;
+        color: rgb(251, 255, 0);
+        padding: 20px 20px;
+        text-decoration: none;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    
 
 div {
         padding-top: 10px;
@@ -169,5 +178,6 @@ a {
   text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
     color: #fff6a9;
   }
+  
 }
 /*Logo*/
