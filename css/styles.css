@@ -13,7 +13,13 @@ body{
         
 } 
 
-
+ul {
+        list-style-type:none;
+        padding: 30px;
+    }
+li {
+       margin-bottom: 2rem;
+}
 div {
         padding-top: 10px;
         padding-right: 20px;
