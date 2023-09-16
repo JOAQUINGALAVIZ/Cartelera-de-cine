@@ -1,0 +1,147 @@
+/* Estilos para el cuerpo del documento */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff ;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+/* Estilos para el encabezado */
+.header {
+    background-color: #050505;
+    color: #fff;''
+    padding: 1rem 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+/* Estilos para la sección de contenido */
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+.flex-container {
+    max-width: 50%;
+}
+
+.flex-container img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Estilos para las listas */
+ul {
+    list-style-type: none;
+    padding: 20px;
+}
+
+li {
+       margin-bottom: 2rem;
+}
+
+/* Estilos para los encabezados */
+h2, h3 {
+    color: #ffffff;
+    padding: 30px;
+}
+
+.img {
+    max-width: 80%;
+    height: auto;
+    margin-right: 50px;
+    margin-left: 10px;
+}
+
+/*Logo*/
+@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
+
+h1 {
+  font-size: calc(20px + 4vh);
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  font-family: "Sacramento", cursive;
+  text-align: center;
+  animation: blink 1s infinite;
+  -webkit-animation: blink 1s infinite;
+  padding: 20px;
+}
+
+a {
+        font-size: calc(10px + 2vh);
+        text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+          color: #fff6a9;
+        font-family: "Sacramento", cursive;
+        text-align: center;
+        animation: blink 1s infinite;
+        -webkit-animation: blink 1s infinite;
+      }
+      
+
+@-webkit-keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  }
+}
+
+@keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  }
+}
+/*Logo*/
+
