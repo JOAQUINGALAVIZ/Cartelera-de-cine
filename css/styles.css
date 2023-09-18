@@ -12,16 +12,7 @@ body{
         
         
 } 
-<<<<<<< HEAD
 
-ul {
-        list-style-type:none;
-        padding: 30px;
-    }
-li {
-       margin-bottom: 2rem;
-}
-=======
 .pie {
         display: inline-block;
         background-color: #8b0303;
@@ -33,7 +24,6 @@ li {
     }
     
 
->>>>>>> 7e70ce445faaa90c4da19344e85293e4c08d720a
 div {
         padding-top: 10px;
         padding-right: 20px;
