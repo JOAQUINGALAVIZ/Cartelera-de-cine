@@ -19,14 +19,16 @@ var peliculas = [
         genero: "Acción", 
         duracion: "1h 35min",
         imagen: "https://www.ecartelera.com/carteles/5200/5220/004_m.jpg",
-        descripcion: " "
+        descripcion: " ",
+        url: "peli_pokemon.html"
     },
     { 
-        titulo: "Pelicula 3", 
-        genero: " ", 
-        duracion: " ",
-        imagen: " ",
-        descripcion: " "
+        titulo: "La Langosta", 
+        genero: "Ciencia ficción", 
+        duracion: "1h 18min",
+        imagen: "https://pics.filmaffinity.com/the_lobster-643891588-large.jpg",
+        descripcion: " ",
+        url: "peli_langosta.html"
     },
     
     // Agrega más películas aquí
@@ -62,7 +64,7 @@ styleElement.innerHTML = `
     }
     .pelicula img {
         max-width: 200px;
-        height: auto;
+        height: 300px;
     }
 `;
 // Agrega el elemento <style> al <head> del documento
