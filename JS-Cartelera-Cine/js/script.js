@@ -3,6 +3,20 @@ document.body.style.backgroundColor = "black";
 //Letras de color Blanco
 document.body.style.color = "white"; 
 
+// Crear un enlace "Nosotros"
+var nosotrosLink = document.createElement("a");
+nosotrosLink.textContent = "Nosotros";
+nosotrosLink.href = "nosotros.html"; 
+nosotrosLink.style.position = "absolute";
+nosotrosLink.style.top = "50px";
+nosotrosLink.style.right = "100px";
+nosotrosLink.style.fontSize = "30px"; 
+nosotrosLink.style.color = "white"; 
+
+// Agregar el enlace al cuerpo del documento
+document.body.appendChild(nosotrosLink);
+
+
 // Datos de las películas
 var peliculas = [
     { 
@@ -15,12 +29,36 @@ var peliculas = [
         url: "peli_justiciero.html"
     },
     { 
+        titulo: "Barbie", 
+        genero: "Comedia fantástica", 
+        duracion: "1h 54min",
+        imagen: "https://m.media-amazon.com/images/M/MV5BOWIwZGY0OTYtZjUzYy00NzRmLTg5YzgtYWMzNWQ0MmZiY2MwXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg",
+        descripcion: " ",
+        url: "peli_barbie.html"
+    },
+    { 
         titulo: "Pokemon la pelicula", 
         genero: "Acción", 
         duracion: "1h 35min",
         imagen: "https://www.ecartelera.com/carteles/5200/5220/004_m.jpg",
         descripcion: " ",
         url: "peli_pokemon.html"
+    },
+    { 
+        titulo: "Mision Imposible", 
+        genero: "Accion", 
+        duracion: "2h 30min",
+        imagen: "https://m.media-amazon.com/images/M/MV5BYzFiZjc1YzctMDY3Zi00NGE5LTlmNWEtN2Q3OWFjYjY1NGM2XkEyXkFqcGdeQXVyMTUyMTUzNjQ0._V1_.jpg",
+        descripcion: " ",
+        url: "peli_mision.html"
+    },
+    { 
+        titulo: "Cars", 
+        genero: "Comedia animada", 
+        duracion: "1h 57 min",
+        imagen: "https://th.bing.com/th/id/OIP.f_toCHd7gRF8RjWmevSZfAHaKz?pid=ImgDet&rs=1",
+        descripcion: " ",
+        url: "peli_cars.html"
     },
     { 
         titulo: "La Langosta", 
@@ -38,30 +76,8 @@ var peliculas = [
         descripcion: " ",
         url: "peli_avatar.html"
     },
-    { 
-        titulo: "Mision Imposible", 
-        genero: "Accion", 
-        duracion: "2h 30min",
-        imagen: "https://m.media-amazon.com/images/M/MV5BYzFiZjc1YzctMDY3Zi00NGE5LTlmNWEtN2Q3OWFjYjY1NGM2XkEyXkFqcGdeQXVyMTUyMTUzNjQ0._V1_.jpg",
-        descripcion: " ",
-        url: "peli_mision.html"
-    },
-    { 
-        titulo: "Barbie", 
-        genero: "Comedia fantástica", 
-        duracion: "1h 54min",
-        imagen: "https://m.media-amazon.com/images/M/MV5BOWIwZGY0OTYtZjUzYy00NzRmLTg5YzgtYWMzNWQ0MmZiY2MwXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg",
-        descripcion: " ",
-        url: "peli_barbie.html"
-    },
-    { 
-        titulo: "Cars", 
-        genero: "Comedia animada", 
-        duracion: "1h 57 min",
-        imagen: "https://th.bing.com/th/id/OIP.f_toCHd7gRF8RjWmevSZfAHaKz?pid=ImgDet&rs=1",
-        descripcion: " ",
-        url: "peli_cars.html"
-    },
+    
+
     // Agrega más películas aquí
 ];
 function generarCartelera() {
