@@ -38,6 +38,14 @@ var peliculas = [
         descripcion: " ",
         url: "peli_avatar.html"
     },
+    { 
+        titulo: "Mision Imposible", 
+        genero: "Accion", 
+        duracion: "2h 30min",
+        imagen: "https://m.media-amazon.com/images/M/MV5BYzFiZjc1YzctMDY3Zi00NGE5LTlmNWEtN2Q3OWFjYjY1NGM2XkEyXkFqcGdeQXVyMTUyMTUzNjQ0._V1_.jpg",
+        descripcion: " ",
+        url: "peli_mision.html"
+    },
     
     // Agrega más películas aquí
 ];
@@ -65,7 +73,7 @@ generarCartelera();
 var styleElement = document.createElement("style");
 styleElement.innerHTML = `
     .pelicula {
-        border: 10px solid white;
+        border: 10px solid black;
         margin: 10px;
         padding: 10px;
         display: inline-block;
@@ -79,3 +87,6 @@ styleElement.innerHTML = `
 document.head.insertAdjacentElement("beforeend", styleElement);
 
 
+// Agregando las redes sociales
+
+//Agregando pie de pagina 
