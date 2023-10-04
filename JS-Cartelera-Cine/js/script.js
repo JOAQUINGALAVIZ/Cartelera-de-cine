@@ -30,6 +30,15 @@ var peliculas = [
         descripcion: " ",
         url: "peli_langosta.html"
     },
+
+    { 
+        titulo: "Mision Imposible",
+        genero: "Accion", 
+        duracion: "2h 4min",
+        imagen: "https://m.media-amazon.com/images/M/MV5BYzFiZjc1YzctMDY3Zi00NGE5LTlmNWEtN2Q3OWFjYjY1NGM2XkEyXkFqcGdeQXVyMTUyMTUzNjQ0._V1_.jpg",
+        descripcion: " ",
+        url: "peli_mision.html"
+    },
     
     // Agrega más películas aquí
 ];
