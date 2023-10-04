@@ -11,7 +11,7 @@ var videoContainer = document.getElementById("video-container");
 var youtubeVideo = document.createElement("iframe");
 youtubeVideo.width = "560";
 youtubeVideo.height = "315";
-youtubeVideo.src = "https://www.youtube.com/embed/iZIxAvKSYac";
+youtubeVideo.src = "https://www.youtube.com/embed/AZS_d_hS2dM";
 youtubeVideo.frameborder = "0";
 youtubeVideo.allowfullscreen = true;
 
@@ -20,14 +20,10 @@ videoContainer.appendChild(youtubeVideo);
 
 
 // Texto de la sinopsis con saltos de línea
-var sinopsisText = "Desde que abandonó su vida como asesino del gobierno, Robert McCall encuentra consuelo \
-en servir justicia en nombre de los oprimidos. <br> \
-Ahora vive en el sur de Italia y pronto descubre que sus nuevos amigos están bajo el control de los jefes criminales locales. <br> \
-A medida que los acontecimientos se vuelven mortales, McCall se convierte en su protector al enfrentarse a la mafia. <br> \ <br> \
-En servir justicia en nombre de los oprimidos. <br> \
-Ahora vive en el sur de Italia y pronto descubre que sus nuevos amigos están bajo el <br> \
-control de los jefes criminales locales a medida que los acontecimientos se vuelven mortales, McCall se convierte en <br> \
-su protector al enfrentarse a la mafia.";
+var sinopsisText = " Jake Sully y Ney'tiri han formado una familia y hacen todo lo posible <br> \
+ por permanecer juntos. Sin embargo, deben abandonar <br> \
+su hogar y explorar las regiones de Pandora cuando una antigua amenaza reaparece. <br> \
+";
 
 // Crear un elemento de párrafo para la sinopsis
 var sinopsisElement = document.createElement("p");

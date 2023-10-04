@@ -30,6 +30,14 @@ var peliculas = [
         descripcion: " ",
         url: "peli_langosta.html"
     },
+    { 
+        titulo: "Avatar", 
+        genero: "Ciencia ficción", 
+        duracion: "2h 18min",
+        imagen: "https://pics.filmaffinity.com/avatar_the_way_of_water-722646748-large.jpg",
+        descripcion: " ",
+        url: "peli_avatar.html"
+    },
     
     // Agrega más películas aquí
 ];
