@@ -54,6 +54,14 @@ var peliculas = [
         descripcion: " ",
         url: "peli_barbie.html"
     },
+    { 
+        titulo: "cars", 
+        genero: "Comedia animada", 
+        duracion: "1h 54min",
+        imagen: "https://www.google.com/search?q=que+tipo+de+pelicula+es+cars&sca_esv=570580370&rlz=1C1CHBF_esMX1045MX1045&tbm=isch&source=lnms&sa=X&ved=2ahUKEwiD49SX1tuBAxUnrYkEHX0TA-EQ_AUoAXoECAMQAw&biw=2558&bih=577&dpr=1#imgrc=r8afUpUuoe8FVM",
+        descripcion: " ",
+        url: "peli_cars.html"
+    },
     // Agrega más películas aquí
 ];
 function generarCartelera() {
