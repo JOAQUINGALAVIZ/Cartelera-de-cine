@@ -46,7 +46,14 @@ var peliculas = [
         descripcion: " ",
         url: "peli_mision.html"
     },
-    
+    { 
+        titulo: "Barbie", 
+        genero: "Comedia fantástica", 
+        duracion: "1h 54min",
+        imagen: "https://m.media-amazon.com/images/M/MV5BOWIwZGY0OTYtZjUzYy00NzRmLTg5YzgtYWMzNWQ0MmZiY2MwXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg",
+        descripcion: " ",
+        url: "peli_barbie.html"
+    },
     // Agrega más películas aquí
 ];
 function generarCartelera() {
