@@ -55,7 +55,7 @@ var peliculas = [
         url: "peli_barbie.html"
     },
     { 
-        titulo: "cars", 
+        titulo: "Cars", 
         genero: "Comedia animada", 
         duracion: "1h 57 min",
         imagen: "https://th.bing.com/th/id/OIP.f_toCHd7gRF8RjWmevSZfAHaKz?pid=ImgDet&rs=1",
