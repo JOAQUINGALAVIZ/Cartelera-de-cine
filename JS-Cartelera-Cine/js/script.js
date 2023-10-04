@@ -57,8 +57,8 @@ var peliculas = [
     { 
         titulo: "cars", 
         genero: "Comedia animada", 
-        duracion: "1h 54min",
-        imagen: "https://static.wikia.nocookie.net/el-mundo-de-cars/images/b/bb/C1e15.jpg/revision/latest?cb=20170309223750&path-prefix=es",
+        duracion: "1h 57 min",
+        imagen: "https://th.bing.com/th/id/OIP.f_toCHd7gRF8RjWmevSZfAHaKz?pid=ImgDet&rs=1",
         descripcion: " ",
         url: "peli_cars.html"
     },

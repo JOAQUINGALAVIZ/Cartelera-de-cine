@@ -11,7 +11,7 @@ var videoContainer = document.getElementById("video-container");
 var youtubeVideo = document.createElement("iframe");
 youtubeVideo.width = "560";
 youtubeVideo.height = "315";
-youtubeVideo.src = "https://www.youtube.com/watch?v=SbXIj2T-_uk";
+youtubeVideo.src = "https://www.youtube.com/embed/SbXIj2T-_uk";
 youtubeVideo.frameborder = "0";
 youtubeVideo.allowfullscreen = true;
 
