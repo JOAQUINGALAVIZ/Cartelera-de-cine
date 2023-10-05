@@ -82,6 +82,14 @@ var peliculas = [
         descripcion: " ",
         url: "peli_avatar.html"
     },
+    { 
+        titulo: "DUNGEONS OF DRAGON",
+        genero: "Ciencia ficción", 
+        duracion: "2h 38min",
+        imagen: "https://m.media-amazon.com/images/M/MV5BZWM5MTQ3NDMtNGFiMS00Y2E5LWE2ZTUtNzM5MTcyZjM3ODRiXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg",
+        descripcion: " ",
+        url: "peli_dungeons.html"
+    },
     
 
     // Agrega más películas aquí
