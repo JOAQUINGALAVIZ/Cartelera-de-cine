@@ -4,26 +4,36 @@ document.body.style.backgroundColor = "black";
 document.body.style.color = "white"; 
 
 
+// Referencia al elemento en el que desea establecer el fondo.
+const cineparkElement = document.getElementById('cinepark');
+
+// URL de la imagen de fondo
+const imageUrl = 'https://imgs.search.brave.com/iYUTbE1mrEj1UaxMTNIADE88M13McXJOxrsT2JaYC4w/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/Zm90by1ncmF0aXMv/dmllam8tZm9uZG8t/bmVncm8tdGV4dHVy/YS1ncnVuZ2UtcGFw/ZWwtdGFwaXotb3Nj/dXJvLXBpemFycmEt/cGl6YXJyYS1wYXJl/ZC1oYWJpdGFjaW9u/XzEyNTgtMjgzMTIu/anBnP3NpemU9NjI2/JmV4dD1qcGc';
+
+// Fondo con imagen
+cineparkElement.style.backgroundImage = `url(${imageUrl})`;
+cineparkElement.style.backgroundSize = 'cover'; // Ajusta el tamaño de la imagen
+cineparkElement.style.backgroundRepeat = 'no-repeat'; // La imagen no se repita.
 
 
 
 
 
-// Crear un enlace "Nosotros"
+// "Nosotros" crea el enlace y escribe el texto
 var nosotrosLink = document.createElement("a");
 nosotrosLink.textContent = "Nosotros";
 nosotrosLink.href = "nosotros.html"; 
 nosotrosLink.style.position = "absolute";
-nosotrosLink.style.top = "50px";
+nosotrosLink.style.top = "20px";
 nosotrosLink.style.right = "100px";
 nosotrosLink.style.fontSize = "30px"; 
 nosotrosLink.style.color = "white"; 
 
-// Agregar el enlace al cuerpo del documento
+// Se agrega el enlace a la pagina
 document.body.appendChild(nosotrosLink);
 
 
-// Datos de las películas
+// Datos de la Cartelera de Cine
 var peliculas = [
     { 
         
@@ -31,7 +41,7 @@ var peliculas = [
         genero: "Acción", 
         duracion: "2h 15min",
         imagen: "https://statics.cinemex.com/movie_posters/UxB4QhUZzWWfswb-750x1125.jpg",
-        descripcion: " ",
+        
         url: "peli_justiciero.html"
     },
     { 
@@ -39,7 +49,7 @@ var peliculas = [
         genero: "Comedia fantástica", 
         duracion: "1h 54min",
         imagen: "https://m.media-amazon.com/images/M/MV5BOWIwZGY0OTYtZjUzYy00NzRmLTg5YzgtYWMzNWQ0MmZiY2MwXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg",
-        descripcion: " ",
+        
         url: "peli_barbie.html"
     },
     { 
@@ -47,7 +57,6 @@ var peliculas = [
         genero: "Acción", 
         duracion: "1h 35min",
         imagen: "https://www.ecartelera.com/carteles/5200/5220/004_m.jpg",
-        descripcion: " ",
         url: "peli_pokemon.html"
     },
     { 
@@ -55,7 +64,6 @@ var peliculas = [
         genero: "Accion", 
         duracion: "2h 30min",
         imagen: "https://m.media-amazon.com/images/M/MV5BYzFiZjc1YzctMDY3Zi00NGE5LTlmNWEtN2Q3OWFjYjY1NGM2XkEyXkFqcGdeQXVyMTUyMTUzNjQ0._V1_.jpg",
-        descripcion: " ",
         url: "peli_mision.html"
     },
     { 
@@ -63,7 +71,6 @@ var peliculas = [
         genero: "Comedia animada", 
         duracion: "1h 57 min",
         imagen: "https://th.bing.com/th/id/OIP.f_toCHd7gRF8RjWmevSZfAHaKz?pid=ImgDet&rs=1",
-        descripcion: " ",
         url: "peli_cars.html"
     },
     { 
@@ -71,7 +78,6 @@ var peliculas = [
         genero: "Ciencia ficción", 
         duracion: "1h 18min",
         imagen: "https://pics.filmaffinity.com/the_lobster-643891588-large.jpg",
-        descripcion: " ",
         url: "peli_langosta.html"
     },
     { 
@@ -79,20 +85,16 @@ var peliculas = [
         genero: "Ciencia ficción", 
         duracion: "2h 18min",
         imagen: "https://pics.filmaffinity.com/avatar_the_way_of_water-722646748-large.jpg",
-        descripcion: " ",
         url: "peli_avatar.html"
     },
     { 
-        titulo: "DUNGEONS OF DRAGON",
+        titulo: "Dungeons of Dragon",
         genero: "Ciencia ficción", 
         duracion: "2h 38min",
         imagen: "https://m.media-amazon.com/images/M/MV5BZWM5MTQ3NDMtNGFiMS00Y2E5LWE2ZTUtNzM5MTcyZjM3ODRiXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg",
-        descripcion: " ",
         url: "peli_dungeons.html"
     },
     
-
-    // Agrega más películas aquí
 ];
 function generarCartelera() {
     var cineparkDiv = document.getElementById("cinepark");
@@ -109,13 +111,13 @@ function generarCartelera() {
         </a>
     `;
 
-    // Agrega el efecto al pasar el mouse
+    // Evento para que realice una accion al pasar el mouse
     peliculaDiv.addEventListener("mouseover", function() {
         peliculaDiv.style.backgroundColor = "midnightblue";
     });
 
     peliculaDiv.addEventListener("mouseout", function() {
-        peliculaDiv.style.backgroundColor = ""; // Restaura el fondo original
+        peliculaDiv.style.backgroundColor = ""; // Al ya no estar el mouse regresa al color original
     });
 
         cineparkDiv.appendChild(peliculaDiv);
@@ -129,11 +131,11 @@ function generarCartelera() {
 
 generarCartelera();
 
-// Agrega los estilos CSS al head del documento
+// Styles del Css en JS
 var styleElement = document.createElement("style");
 styleElement.innerHTML = `
     .pelicula {
-        border: 10px solid black;
+        border: 0px;
         margin: 20px;
         padding: 20px;
         display: inline-block;
@@ -144,7 +146,7 @@ styleElement.innerHTML = `
         height: 300px;
     }
 `;
-// Agrega el elemento <style> al <head> del documento
+// Se agrega el elemento <style> al <head> del documento
 document.head.insertAdjacentElement("beforeend", styleElement);
 
 
