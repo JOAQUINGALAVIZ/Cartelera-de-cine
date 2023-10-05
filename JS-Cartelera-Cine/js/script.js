@@ -105,12 +105,13 @@ var styleElement = document.createElement("style");
 styleElement.innerHTML = `
     .pelicula {
         border: 10px solid black;
-        margin: 10px;
-        padding: 10px;
+        margin: 20px;
+        padding: 20px;
         display: inline-block;
+        
     }
     .pelicula img {
-        max-width: 200px;
+        max-width: 250px;
         height: 300px;
     }
 `;
