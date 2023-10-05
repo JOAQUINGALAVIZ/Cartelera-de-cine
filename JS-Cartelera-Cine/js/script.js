@@ -3,6 +3,12 @@ document.body.style.backgroundColor = "black";
 //Letras de color Blanco
 document.body.style.color = "white"; 
 
+
+
+
+
+
+
 // Crear un enlace "Nosotros"
 var nosotrosLink = document.createElement("a");
 nosotrosLink.textContent = "Nosotros";
@@ -94,9 +100,24 @@ function generarCartelera() {
             <img src="${pelicula.imagen}" alt="${pelicula.titulo}" />
         </a>
     `;
+
+    // Agrega el efecto al pasar el mouse
+    peliculaDiv.addEventListener("mouseover", function() {
+        peliculaDiv.style.backgroundColor = "midnightblue";
+    });
+
+    peliculaDiv.addEventListener("mouseout", function() {
+        peliculaDiv.style.backgroundColor = ""; // Restaura el fondo original
+    });
+
         cineparkDiv.appendChild(peliculaDiv);
     });
 }
+
+
+
+
+
 
 generarCartelera();
 
