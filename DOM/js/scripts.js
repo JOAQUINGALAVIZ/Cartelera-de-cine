@@ -1,53 +1,47 @@
-document.addEventListener("DOMContentLoaded", function () {
+
+  // Creamos h1 como nuestro título principal
+  const cineparktituloElement = document.createElement('h1');
+  cineparktituloElement.textContent = 'CinePark';
+  cineparktituloElement.style.textAlign = 'center';
+
+  // Creamos un contenedor div para CinePark
+  const contenedorcinepark = document.createElement('div');
+  contenedorcinepark.id = 'cinepark';
+
+  //
+  // Agregamos el título principal y el contenedor 
+  document.body.appendChild(cineparktituloElement);
+  document.body.appendChild(contenedorcinepark);
+  //
+  // Establecemos estilos para el sitio web
+  document.body.style.backgroundColor = "black";
+  document.body.style.color = "white";
+
+// Referencia para establecer el fondo
+const cineparkElement = document.getElementById("fondodecinepark");
+
+///
+
+// Configuramos la imagen de fondo 
+const fondoconimagen = "https://imgs.search.brave.com/iYUTbE1mrEj1UaxMTNIADE88M13McXJOxrsT2JaYC4w/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/Zm90by1ncmF0aXMv/dmllam8tZm9uZG8t/bmVncm8tdGV4dHVy/YS1ncnVuZ2UtcGFw/ZWwtdGFwaXotb3Nj/dXJvLXBpemFycmEt/cGl6YXJyYS1wYXJl/ZC1oYWJpdGFjaW9u/XzEyNTgtMjgzMTIu/anBnP3NpemU9NjI2/JmV4dD1qcGc"; // Reemplazamos con la URL de la imagen que hemos seleccionado
+contenedorcinepark.style.backgroundImage = `url(${fondoconimagen})`;
+contenedorcinepark.style.backgroundSize = "cover"; // Ajustamos el tamaño de la imagen de fondo
+contenedorcinepark.style.backgroundRepeat = "no-repeat"; // Evitamos que la imagen se repita
 
 
-// Creamos un elemento h1
-const h1Element = document.createElement('h1');
-h1Element.textContent = 'CinePark';
 
-h1Element.style.textAlign = 'center';
+// Creacion de Nosotros
+var nosotros = document.createElement("nosotros");
+nosotros.textContent = "Nosotros";
+nosotros.href = "nosotros.html";
+nosotros.style.position = "absolute";
+nosotros.style.top = "20px";
+nosotros.style.right = "100px";
+nosotros.style.fontSize = "30px";
+nosotros.style.color = "white";
 
-// Creamos un elemento div con el id "cinepark"
-const divElement = document.createElement('div');
-divElement.id = 'cinepark';
-
-// Agregamos el elemento h1 al cuerpo del documento
-document.body.appendChild(h1Element);
-
-// Agregamos el elemento div al cuerpo del documento
-document.body.appendChild(divElement);
-
-
-
-//Fondo de Negro
-document.body.style.backgroundColor = "black";
-//Letras de color Blanco
-document.body.style.color = "white";
-
-// Referencia al elemento en el que desea establecer el fondo.
-const cineparkElement = document.getElementById("cinepark");
-
-// URL de la imagen de fondo
-const imageUrl =
-  "https://imgs.search.brave.com/iYUTbE1mrEj1UaxMTNIADE88M13McXJOxrsT2JaYC4w/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/Zm90by1ncmF0aXMv/dmllam8tZm9uZG8t/bmVncm8tdGV4dHVy/YS1ncnVuZ2UtcGFw/ZWwtdGFwaXotb3Nj/dXJvLXBpemFycmEt/cGl6YXJyYS1wYXJl/ZC1oYWJpdGFjaW9u/XzEyNTgtMjgzMTIu/anBnP3NpemU9NjI2/JmV4dD1qcGc";
-
-// Fondo con imagen
-cineparkElement.style.backgroundImage = `url(${imageUrl})`;
-cineparkElement.style.backgroundSize = "cover"; // Ajusta el tamaño de la imagen
-cineparkElement.style.backgroundRepeat = "no-repeat"; // La imagen no se repita.
-
-// "Nosotros" crea el enlace y escribe el texto
-var nosotrosLink = document.createElement("a");
-nosotrosLink.textContent = "Nosotros";
-nosotrosLink.href = "nosotros.html";
-nosotrosLink.style.position = "absolute";
-nosotrosLink.style.top = "20px";
-nosotrosLink.style.right = "100px";
-nosotrosLink.style.fontSize = "30px";
-nosotrosLink.style.color = "white";
-
-// Se agrega el enlace a la pagina
-document.body.appendChild(nosotrosLink);
+  // Agregamos a la página
+  document.body.appendChild(nosotros);
 
 // Datos de la Cartelera de Cine
 var peliculas = [
@@ -116,61 +110,59 @@ var peliculas = [
     url: "peli_dungeons.html",
   },
 ];
-
+///
 function generarCartelera() {
     var cineparkDiv = document.getElementById("cinepark");
   
-    for (let pelicula of peliculas) {
-      // Crea el elemento de la película
-      var peliculaDiv = document.createElement("div");
-      peliculaDiv.className = "pelicula";
+    for (let cartelerapelicula of peliculas) {
+      // Creamos el elemento de la película
+      var carteleradiv = document.createElement("contenedor");
+      carteleradiv.className = "pelicula";
   
-      // Crea el elemento de enlace
-      var enlace = document.createElement("a");
-      enlace.href = pelicula.url;
+      // Creamos el elemento de enlace
+      var urldepelicula = document.createElement("url");
+      urldepelicula.href = cartelerapelicula.url;
   
-      // Crea el elemento de la imagen
-      var imagen = document.createElement("img");
-      imagen.src = pelicula.imagen;
-      imagen.alt = pelicula.titulo;
+      // Creamos el elemento de la imagen
+      var imagendepelicula = document.createElement("img");
+      imagendepelicula.src = cartelerapelicula.imagen;
+      imagendepelicula.alt = cartelerapelicula.titulo;
   
-      // Crea el elemento del título
-      var titulo = document.createElement("h2");
-      titulo.textContent = pelicula.titulo;
+      // Creamos el elemento del título
+      var titulodepelicula = document.createElement("h2");
+      titulodepelicula.textContent = cartelerapelicula.titulo;
   
-      // Crea el elemento del género
-      var genero = document.createElement("p");
-      genero.innerHTML = "<strong>Género:</strong> " + pelicula.genero;
+      // Creamos el elemento del genero
+      var generodepelicula = document.createElement("parrafo");
+      generodepelicula.innerHTML = "<strong>Género:</strong> " + cartelerapelicula.genero;
   
-      // Crea el elemento de duración
+      // Creamos el elemento de duracion
       var duracion = document.createElement("p");
-      duracion.innerHTML = "<strong>Duración:</strong> " + pelicula.duracion;
+      duracion.innerHTML = "<strong>Duración:</strong> " + cartelerapelicula.duracion;
   
-      // Agrega los elementos al DOM
-      enlace.appendChild(imagen);
-      peliculaDiv.appendChild(enlace);
-      peliculaDiv.appendChild(titulo);
-      peliculaDiv.appendChild(genero);
-      peliculaDiv.appendChild(duracion);
+      // Agregamos  los elementos al DOM
+      urldepelicula.appendChild(imagendepelicula);
+      carteleradiv.appendChild(urldepelicula);
+      carteleradiv.appendChild(titulodepelicula);
+      carteleradiv.appendChild(generodepelicula);
+      carteleradiv.appendChild(duracion);
   
-      cineparkDiv.appendChild(peliculaDiv);
+      cineparkDiv.appendChild(carteleradiv);
   
-      // Agrega el evento "mouseover" y "mouseout" con una función externa
-      agregarEventosMouse(peliculaDiv);
+      agregarEventosMouse(carteleradiv);
     }
   }
-  
+
+    // Agregamos eventos de mouse a las películas
   function agregarEventosMouse(pelicula) {
     pelicula.addEventListener("mouseover", function () {
-      pelicula.style.backgroundColor = "midnightblue";// Cambia el color de fondo al pasar el mouse
-      // Las imágenes se hacen gigantes
-      pelicula.style.transform = "scale(1.1)";
+      pelicula.style.backgroundColor = "midnightblue";// Cambiamos el color de fondo al pasar el mouse
+      pelicula.style.transform = "scale(1.1)"; // Las imágenes se hacen gigantes
     });
   
     pelicula.addEventListener("mouseout", function () {
       pelicula.style.backgroundColor = ""; // Al ya no estar el mouse regresa al color original
-    // Las imágenes vuelven a su tamaño normal
-      pelicula.style.transform = "scale(1)";
+      pelicula.style.transform = "scale(1)";// Las imágenes vuelven a su tamaño normal
     });
 
 
@@ -181,7 +173,7 @@ function generarCartelera() {
   
   
 
-// Styles del Css en JS
+// Establecemos estilos CSS en JS para las películas
 var styleElement = document.createElement("style");
 styleElement.innerHTML = `
     .pelicula {
@@ -196,20 +188,20 @@ styleElement.innerHTML = `
         height: 300px;
     }
 `;
-// Se agrega el elemento <style> al <head> del documento
-document.head.insertAdjacentElement("beforeend", styleElement);
+  // Agregamos los estilos al head del documento
+  document.head.insertAdjacentElement("beforeend", styleElement);
 
-
+//
 // Creaando el contenedor de la sección de las redes sociales
 var redesSocialesSection = document.createElement("section");
 redesSocialesSection.id = "redes-sociales";
 redesSocialesSection.style.textAlign = "center";
-
+//
 // La frase del titulo "siguenos en nuestras redes sociales"
 var tituloRedesSociales = document.createElement("h2");
 tituloRedesSociales.textContent = "Síguenos en nuestras redes sociales:";
 redesSocialesSection.appendChild(tituloRedesSociales);
-
+//
 // Creando el vinculo de la red social de Facebook
 var facebookLink = document.createElement("a");
 var facebookIcon = document.createElement("img");
@@ -218,7 +210,7 @@ facebookLink.href = "https://www.facebook.com/";
 facebookLink.target = "_blank";
 facebookLink.appendChild(facebookIcon);
 redesSocialesSection.appendChild(facebookLink);
-
+//
 // Creando el vinculo de la red social de Instagram
 var instagramLink = document.createElement("a");
 var instagramIcon = document.createElement("img");
@@ -230,7 +222,7 @@ instagramLink.appendChild(instagramIcon);
 redesSocialesSection.appendChild(instagramLink);
 
 
-// Creando el vinculo de la red social de Twittter
+// Creando el vinculo de la red social de Twittter/
 var twitterLink = document.createElement("a");
 var twitterIcon = document.createElement("img");
 twitterIcon.src = "https://cdn.ipadizate.com/2023/07/img_1867-1.jpg"; 
@@ -249,7 +241,7 @@ youtubeLink.href = "https://www.youtube.com/";
 youtubeLink.target = "_blank";
 youtubeLink.appendChild(youtubeIcon);
 redesSocialesSection.appendChild(youtubeLink);
-
+//
 // Estilos para los iconos de las redes sociales
 var iconoEstilos = `
 width: 50px;
@@ -265,7 +257,7 @@ instagramIcon.style.cssText = iconoEstilos;
 twitterIcon.style.cssText = iconoEstilos;
 youtubeIcon.style.cssText = iconoEstilos;
 
-
+//
 // Agregar la sección al final del cuerpo del documento
 document.body.appendChild(redesSocialesSection);
 
@@ -286,7 +278,6 @@ estiloPieDePagina.appendChild(document.createTextNode(`
         padding: 10px;
     }
 `));
-
+//
 // Agregar el elemento de estilo al head del documento
 document.head.appendChild(estiloPieDePagina);
-});
