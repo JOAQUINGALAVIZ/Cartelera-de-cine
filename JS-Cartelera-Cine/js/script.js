@@ -151,5 +151,73 @@ document.head.insertAdjacentElement("beforeend", styleElement);
 
 
 // Agregando las redes sociales
+// Creaando el contenedor de la sección de las redes sociales
+var redesSocialesSection = document.createElement("section");
+redesSocialesSection.id = "redes-sociales";
+redesSocialesSection.style.textAlign = "center";
+
+// La frase del titulo "siguenos en nuestras redes sociales"
+var tituloRedesSociales = document.createElement("h2");
+tituloRedesSociales.textContent = "Síguenos en nuestras redes sociales:";
+redesSocialesSection.appendChild(tituloRedesSociales);
+
+// Creando el vinculo de la red social de Facebook
+var facebookLink = document.createElement("a");
+var facebookIcon = document.createElement("img");
+facebookIcon.src = "https://png.pngtree.com/png-clipart/20180515/ourmid/pngtree-facebook-icon-png-image_3566125.png"; 
+facebookLink.href = "https://www.facebook.com/";
+facebookLink.target = "_blank";
+facebookLink.appendChild(facebookIcon);
+redesSocialesSection.appendChild(facebookLink);
+
+// Creando el vinculo de la red social de Instagram
+var instagramLink = document.createElement("a");
+var instagramIcon = document.createElement("img");
+instagramIcon.src = "https://img.freepik.com/vector-premium/vinnytsia-ucrania-27-abril-2023-icono-redes-sociales-populares-instagram-diseno-vectorial_545793-1681.jpg"; 
+instagramIcon.alt = "Instagram";
+instagramLink.href = "https://www.instagram.com/";
+instagramLink.target = "_blank";
+instagramLink.appendChild(instagramIcon);
+redesSocialesSection.appendChild(instagramLink);
+
+
+// Creando el vinculo de la red social de Twittter
+var twitterLink = document.createElement("a");
+var twitterIcon = document.createElement("img");
+twitterIcon.src = "https://cdn.ipadizate.com/2023/07/img_1867-1.jpg"; 
+twitterIcon.alt = "Twitter";
+twitterLink.href = "https://twitter.com/";
+twitterLink.target = "_blank";
+twitterLink.appendChild(twitterIcon);
+redesSocialesSection.appendChild(twitterLink);
+
+// Creando el vinculo de la red social de Youtube
+var youtubeLink = document.createElement("a");
+var youtubeIcon = document.createElement("img");
+youtubeIcon.src = "https://cdn.icon-icons.com/icons2/1099/PNG/512/1485482355-youtube_78661.png"; 
+youtubeIcon.alt = "Youtube";
+youtubeLink.href = "https://www.youtube.com/";
+youtubeLink.target = "_blank";
+youtubeLink.appendChild(youtubeIcon);
+redesSocialesSection.appendChild(youtubeLink);
+
+// Estilos css para los iconos de las redes sociales
+var iconoEstilos = `
+width: 50px;
+margin: 30px;
+padding: 5px;
+border: 2px solid white;
+border-radius: 50%;
+`;
+
+// Aplicando los estilos a las imágenes de las redes sociales
+facebookIcon.style.cssText = iconoEstilos;
+instagramIcon.style.cssText = iconoEstilos;
+twitterIcon.style.cssText = iconoEstilos;
+youtubeIcon.style.cssText = iconoEstilos;
+
+
+// Agregar la sección al final del cuerpo del documento
+document.body.appendChild(redesSocialesSection);
 
 //Agregando pie de pagina 
