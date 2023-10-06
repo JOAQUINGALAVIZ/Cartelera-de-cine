@@ -2,13 +2,17 @@
   // Creamos h1 como nuestro título principal
   const cineparktituloElement = document.createElement('h1');
   cineparktituloElement.textContent = 'CinePark';
+
+  
   cineparktituloElement.style.textAlign = 'center';
+
+
 
   // Creamos un contenedor div para CinePark
   const contenedorcinepark = document.createElement('div');
   contenedorcinepark.id = 'cinepark';
 
-  //
+  //.
   // Agregamos el título principal y el contenedor 
   document.body.appendChild(cineparktituloElement);
   document.body.appendChild(contenedorcinepark);
@@ -31,7 +35,7 @@ contenedorcinepark.style.backgroundRepeat = "no-repeat"; // Evitamos que la imag
 
 
 // Creacion de Nosotros
-var nosotros = document.createElement("nosotros");
+var nosotros = document.createElement("a");
 nosotros.textContent = "Nosotros";
 nosotros.href = "nosotros.html";
 nosotros.style.position = "absolute";
@@ -110,7 +114,7 @@ var peliculas = [
     url: "peli_dungeons.html",
   },
 ];
-///
+///;
 function generarCartelera() {
     var cineparkDiv = document.getElementById("cinepark");
   
@@ -210,7 +214,7 @@ facebookLink.href = "https://www.facebook.com/";
 facebookLink.target = "_blank";
 facebookLink.appendChild(facebookIcon);
 redesSocialesSection.appendChild(facebookLink);
-//
+//;
 // Creando el vinculo de la red social de Instagram
 var instagramLink = document.createElement("a");
 var instagramIcon = document.createElement("img");
@@ -278,6 +282,6 @@ estiloPieDePagina.appendChild(document.createTextNode(`
         padding: 10px;
     }
 `));
-//
+//'
 // Agregar el elemento de estilo al head del documento
 document.head.appendChild(estiloPieDePagina);
