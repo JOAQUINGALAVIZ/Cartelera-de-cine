@@ -2,7 +2,7 @@ const h1Element = document.createElement('h1');
 
 // Creamos un elemento de enlace (cine) y establece su contenido y atributos
 const linkElement = document.createElement('cine');
-linkElement.textContent = 'Cinepark'; // Texto del enlace
+linkElement.textContent = 'CinePark'; // Texto del enlace
 linkElement.id = 'cine'; // ID del enlace 
 // Centramos el título principal (h1)
 h1Element.style.display = 'flex';
