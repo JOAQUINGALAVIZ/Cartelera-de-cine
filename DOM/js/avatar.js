@@ -6,16 +6,15 @@ const linkElement = document.createElement('cine');
 linkElement.textContent = 'CinePark'; // Texto del enlace
 linkElement.id = 'cine'; // ID del enlace 
 // Centramos el título principal (h1)
-h1element.style.display = 'flex';
-h1element.style.justifyContent = 'center';
-h1element.style.alignItems = 'center';
+h1Element.style.display = 'flex';
+h1Element.style.justifyContent = 'center';
+h1Element.style.alignItems = 'center';
 
 // Agregamos el elemento de enlace al elemento h1
-h1element.appendChild(linkElement);
+h1Element.appendChild(linkElement);
 
 // Agregamos el elemento h1 al cuerpo del documento
-document.body.appendChild(h1element);
-
+document.body.appendChild(h1Element);
 
 
 
