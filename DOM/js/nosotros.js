@@ -24,7 +24,7 @@ document.body.style.color = "white";
 
         // Función que se ejecutará al hacer clic en el h1
         document.getElementById("enlace").addEventListener("click", function() {
-            // Redirigir a la página deseada
+            // Redirigimos a la página deseada
             window.location.href = "index.html";
         });
 
@@ -36,11 +36,11 @@ document.body.style.color = "white";
         sectionElement.style.textAlign = "center";
         sectionElement.style.minHeight = "100vh";
 
-        // Crea el primer artículo
+        // Creamos el primer artículo
         const articleElement = document.createElement("article");
         articleElement.classList.add("flex-container");
 
-        // Agrega contenido al primer artículo
+        // Agregamos contenido al primer artículo
         const h2Element1 = document.createElement("h2");
         h2Element1.textContent = "Nosotros";
 
@@ -51,14 +51,14 @@ document.body.style.color = "white";
         imgElement.src = "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExa2w3aGdjdzRkdXpuaXI3ZTV0dDFvZ3hzNXBoNHh5ZzY4dWw3bzRjMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/hrvbl0atjWjR5VzZJd/giphy.gif"; // Reemplaza "tu-gif.gif" con la ruta de tu GIF
         imgElement.alt = "Cartelera de Cine";
 
-        // Agrega elementos al primer artículo
+        // Agregamos elementos al primer artículo
         articleElement.appendChild(h2Element1);
         articleElement.appendChild(pElement1);
         articleElement.appendChild(imgElement);
 
   
 
-        // Agrega contenido al segundo div
+        // Agregamos contenido al segundo div
         const h2Element2 = document.createElement("h2");
         h2Element2.textContent = "Quiénes somos";
 
@@ -71,21 +71,21 @@ document.body.style.color = "white";
 
         
 
-        // Agrega elementos al segundo div
+        // Agregamos elementos al segundo div
         divElement.appendChild(h2Element2);
         divElement.appendChild(pElement2);
         divElement.appendChild(h3Element);
         
 
-        // Agrega los elementos al elemento <section>
+        // Agregamos los elementos al elemento <section>
         sectionElement.appendChild(articleElement);
         sectionElement.appendChild(divElement);
         
 
-        // Adjunta el elemento <section> al cuerpo del documento
+        // Adjuntamos el elemento <section> al cuerpo del documento
         document.body.appendChild(sectionElement);
 
-       // Agregar el pie de página
+       // Agregamos el pie de página
     var footerElement = document.createElement("footer");
     footerElement.style.textAlign = "center";
     footerElement.style.margin = "0 auto";

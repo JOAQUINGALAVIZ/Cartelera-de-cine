@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Estilización de Formularios</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<article class="flex-container">
+    <h2>Login</h2>
+    <p>CARTELERA DE CINE</p>
+    <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExa2w3aGdjdzRkdXpuaXI3ZTV0dDFvZ3hzNXBoNHh5ZzY4dWw3bzRjMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/hrvbl0atjWjR5VzZJd/giphy.gif" alt="Cartelera de Cine">
+</article>
+<body>
+    <form>
+        <h2>Formulario de Ejemplo</h2>
+        
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+        </div>
+        
+        <div class="form-group">
+            <label>Género:</label>
+            <label for="hombre" class="radio-label">Hombre</label>
+            <input type="radio" id="hombre" name="genero" class="radio-input">
+            <label for="mujer" class="radio-label">Mujer</label>
+            <input type="radio" id="mujer" name="genero" class="radio-input">
+        </div>
+        
+        <div class="form-group">
+            <label for="pais">País:</label>
+            <select id="pais">
+                <option value="usa">Estados Unidos</option>
+                <option value="canada">Canadá</option>
+                <option value="mexico">México</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" required>
+            <span class="error-message">Ingrese una dirección de correo válida.</span>
+        </div>
+        
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
