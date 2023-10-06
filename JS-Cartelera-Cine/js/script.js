@@ -221,3 +221,22 @@ youtubeIcon.style.cssText = iconoEstilos;
 document.body.appendChild(redesSocialesSection);
 
 //Agregando pie de pagina 
+// Creando el elemento que va en el pie de pagina de derechos reservados
+var pieDePagina = document.createElement("footer");
+var textoPieDePagina = document.createTextNode("CinePark -- Todos los derechos reservados.");
+pieDePagina.appendChild(textoPieDePagina);
+pieDePagina.style.textAlign = "center";
+document.body.appendChild(pieDePagina);
+
+// Estilos css en js para el pie de pagina
+var estiloPieDePagina = document.createElement("style");
+estiloPieDePagina.appendChild(document.createTextNode(`
+    footer {
+        background-color: black;
+        color: white;
+        padding: 10px;
+    }
+`));
+
+// Agregar el elemento de estilo al head del documento
+document.head.appendChild(estiloPieDePagina);
