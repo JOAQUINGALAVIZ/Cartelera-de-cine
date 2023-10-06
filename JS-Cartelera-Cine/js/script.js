@@ -150,7 +150,6 @@ styleElement.innerHTML = `
 document.head.insertAdjacentElement("beforeend", styleElement);
 
 
-// Agregando las redes sociales
 // Creaando el contenedor de la sección de las redes sociales
 var redesSocialesSection = document.createElement("section");
 redesSocialesSection.id = "redes-sociales";
@@ -201,7 +200,7 @@ youtubeLink.target = "_blank";
 youtubeLink.appendChild(youtubeIcon);
 redesSocialesSection.appendChild(youtubeLink);
 
-// Estilos css para los iconos de las redes sociales
+// Estilos para los iconos de las redes sociales
 var iconoEstilos = `
 width: 50px;
 margin: 30px;
@@ -233,7 +232,7 @@ var estiloPieDePagina = document.createElement("style");
 estiloPieDePagina.appendChild(document.createTextNode(`
     footer {
         background-color: black;
-        color: white;
+        color: gold;
         padding: 10px;
     }
 `));
