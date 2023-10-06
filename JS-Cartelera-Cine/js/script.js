@@ -160,14 +160,21 @@ function generarCartelera() {
     }
   }
   
-  function agregarEventosMouse(elemento) {
-    elemento.addEventListener("mouseover", function () {
-      elemento.style.backgroundColor = "midnightblue";
+  function agregarEventosMouse(pelicula) {
+    pelicula.addEventListener("mouseover", function () {
+      pelicula.style.backgroundColor = "midnightblue";// Cambia el color de fondo al pasar el mouse
+      // Las imágenes se hacen gigantes
+      pelicula.style.transform = "scale(1.1)";
     });
   
-    elemento.addEventListener("mouseout", function () {
-      elemento.style.backgroundColor = ""; // Al ya no estar el mouse regresa al color original
+    pelicula.addEventListener("mouseout", function () {
+      pelicula.style.backgroundColor = ""; // Al ya no estar el mouse regresa al color original
+    // Las imágenes vuelven a su tamaño normal
+      pelicula.style.transform = "scale(1)";
     });
+
+
+    
   }
   
   generarCartelera();
