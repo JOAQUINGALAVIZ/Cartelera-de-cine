@@ -1,3 +1,6 @@
+document.addEventListener("DOMContentLoaded", function () {
+
+
 // Creamos un elemento h1
 const h1Element = document.createElement('h1');
 h1Element.textContent = 'CinePark';
@@ -279,3 +282,4 @@ estiloPieDePagina.appendChild(document.createTextNode(`
 
 // Agregar el elemento de estilo al head del documento
 document.head.appendChild(estiloPieDePagina);
+});
