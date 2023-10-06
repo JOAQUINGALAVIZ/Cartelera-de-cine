@@ -124,7 +124,7 @@ function generarCartelera() {
       carteleradiv.className = "pelicula";
   
       // Creamos el elemento de enlace
-      var urldepelicula = document.createElement("url");
+      var urldepelicula = document.createElement("a");
       urldepelicula.href = cartelerapelicula.url;
   
       // Creamos el elemento de la imagen
