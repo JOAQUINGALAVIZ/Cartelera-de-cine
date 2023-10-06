@@ -1,3 +1,21 @@
+// Creamos un elemento h1
+const h1Element = document.createElement('h1');
+h1Element.textContent = 'CinePark';
+
+h1Element.style.textAlign = 'center';
+
+// Creamos un elemento div con el id "cinepark"
+const divElement = document.createElement('div');
+divElement.id = 'cinepark';
+
+// Agregamos el elemento h1 al cuerpo del documento
+document.body.appendChild(h1Element);
+
+// Agregamos el elemento div al cuerpo del documento
+document.body.appendChild(divElement);
+
+
+
 //Fondo de Negro
 document.body.style.backgroundColor = "black";
 //Letras de color Blanco
