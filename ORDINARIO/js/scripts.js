@@ -1,15 +1,15 @@
 // Creamos h1 como nuestro título principal
-const cineparktituloElement = document.createElement('h1');
-cineparktituloElement.textContent = 'CinePark';
-cineparktituloElement.style.textAlign = 'center';
+const cineparkTituloElement = document.createElement('h1');
+cineparkTituloElement.textContent = 'CinePark';
+cineparkTituloElement.style.textAlign = 'center';
 
 // Creamos un contenedor div para CinePark
-const contenedorcinepark = document.createElement('div');
-contenedorcinepark.id = 'cinepark';
+const contenedorCinepark = document.createElement('div');
+contenedorCinepark.id = 'cinepark';
 
 // Agregamos el título principal y el contenedor 
-document.body.appendChild(cineparktituloElement);
-document.body.appendChild(contenedorcinepark);
+document.body.appendChild(cineparkTituloElement);
+document.body.appendChild(contenedorCinepark);
 
 // Establecemos estilos para el sitio web
 document.body.style.backgroundColor = "black";
@@ -31,33 +31,33 @@ function obtenerDatosTMDB() {
 
       // Iterar a través de las películas obtenidas y crear elementos
       for (let pelicula of peliculas) {
-        const carteleradiv = document.createElement("div");
-        carteleradiv.className = "pelicula";
+        const carteleraDiv = document.createElement("div");
+        carteleraDiv.className = "pelicula";
 
-        const urldepelicula = document.createElement("a");
-        urldepelicula.href = `https://www.themoviedb.org/movie/${pelicula.id}`; // Enlace a la página de la película en TMDb
+        const urlPelicula = document.createElement("a");
+        urlPelicula.href = `https://www.themoviedb.org/movie/${pelicula.id}`;
 
-        const imagendepelicula = document.createElement("img");
-        imagendepelicula.src = `https://image.tmdb.org/t/p/w500/${pelicula.poster_path}`;
-        imagendepelicula.alt = pelicula.title;
+        const imgPelicula = document.createElement("img");
+        imgPelicula.src = `https://image.tmdb.org/t/p/w500/${pelicula.poster_path}`;
+        imgPelicula.alt = pelicula.title;
 
-        const titulodepelicula = document.createElement("h2");
-        titulodepelicula.textContent = pelicula.title;
+        const tituloPelicula = document.createElement("h2");
+        tituloPelicula.textContent = pelicula.title;
 
-        const generodepelicula = document.createElement("p");
-        generodepelicula.innerHTML = "<strong>Género:</strong> " + pelicula.genre_ids.join(', ');
+        const generoPelicula = document.createElement("p");
+        generoPelicula.innerHTML = "<strong>Género:</strong> " + pelicula.genre_ids.join(', ');
 
         const duracion = document.createElement("p");
-        duracion.innerHTML = "<strong>Duración:</strong> " + pelicula.runtime + " min"; // Se asume que la duración está disponible en la respuesta de la API
+        duracion.innerHTML = "<strong>Duración:</strong>" + pelicula.runtime + " min";
 
-        urldepelicula.appendChild(imagendepelicula);
-        carteleradiv.appendChild(urldepelicula);
-        carteleradiv.appendChild(titulodepelicula);
-        carteleradiv.appendChild(generodepelicula);
-        carteleradiv.appendChild(duracion);
+        urlPelicula.appendChild(imgPelicula);
+        carteleraDiv.appendChild(urlPelicula);
+        carteleraDiv.appendChild(tituloPelicula);
+        carteleraDiv.appendChild(generoPelicula);
+        carteleraDiv.appendChild(duracion);
 
-        cineparkDiv.appendChild(carteleradiv);
-        agregarEventosMouse(carteleradiv);
+        cineparkDiv.appendChild(carteleraDiv);
+        agregarEventosMouse(carteleraDiv);
       }
     })
     .catch(error => console.error('Error:', error));
@@ -85,12 +85,12 @@ var redesSocialesSection = document.createElement("section");
 redesSocialesSection.id = "redes-sociales";
 redesSocialesSection.style.textAlign = "center";
 
-// La frase del titulo "siguenos en nuestras redes sociales"
+// La frase del título "siguenos en nuestras redes sociales"
 var tituloRedesSociales = document.createElement("h2");
 tituloRedesSociales.textContent = "Síguenos en nuestras redes sociales:";
 redesSocialesSection.appendChild(tituloRedesSociales);
 
-// Creando el vinculo de la red social de Facebook
+// Creando el vínculo de la red social de Facebook
 var facebookLink = document.createElement("a");
 var facebookIcon = document.createElement("img");
 facebookIcon.src = "https://png.pngtree.com/png-clipart/20180515/ourmid/pngtree-facebook-icon-png-image_3566125.png"; 
@@ -99,7 +99,7 @@ facebookLink.target = "_blank";
 facebookLink.appendChild(facebookIcon);
 redesSocialesSection.appendChild(facebookLink);
 
-// Creando el vinculo de la red social de Instagram
+// Creando el vínculo de la red social de Instagram
 var instagramLink = document.createElement("a");
 var instagramIcon = document.createElement("img");
 instagramIcon.src = "https://img.freepik.com/vector-premium/vinnytsia-ucrania-27-abril-2023-icono-redes-sociales-populares-instagram-diseno-vectorial_545793-1681.jpg"; 
@@ -109,7 +109,7 @@ instagramLink.target = "_blank";
 instagramLink.appendChild(instagramIcon);
 redesSocialesSection.appendChild(instagramLink);
 
-// Creando el vinculo de la red social de Twittter/
+// Creando el vínculo de la red social de Twitter/
 var twitterLink = document.createElement("a");
 var twitterIcon = document.createElement("img");
 twitterIcon.src = "https://cdn.ipadizate.com/2023/07/img_1867-1.jpg"; 
@@ -119,7 +119,7 @@ twitterLink.target = "_blank";
 twitterLink.appendChild(twitterIcon);
 redesSocialesSection.appendChild(twitterLink);
 
-// Creando el vinculo de la red social de Youtube
+// Creando el vínculo de la red social de Youtube
 var youtubeLink = document.createElement("a");
 var youtubeIcon = document.createElement("img");
 youtubeIcon.src = "https://cdn.icon-icons.com/icons2/1099/PNG/512/1485482355-youtube_78661.png"; 
@@ -152,15 +152,15 @@ document.body.appendChild(redesSocialesSection);
 
 
 
-//Agregando pie de pagina 
-// Creando el elemento que va en el pie de pagina de derechos reservados
+//Agregando pie de página
+// Creando el elemento que va en el pie de página de derechos reservados
 var pieDePagina = document.createElement("footer");
 var textoPieDePagina = document.createTextNode("CinePark -- Todos los derechos reservados.");
 pieDePagina.appendChild(textoPieDePagina);
 pieDePagina.style.textAlign = "center";
 document.body.appendChild(pieDePagina);
 
-// Estilos css en js para el pie de pagina
+// Estilos css en js para el pie de página
 var estiloPieDePagina = document.createElement("style");
 estiloPieDePagina.appendChild(document.createTextNode(`
     footer {
