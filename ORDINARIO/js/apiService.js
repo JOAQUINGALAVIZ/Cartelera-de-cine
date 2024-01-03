@@ -29,3 +29,16 @@ function obtenerProximosLanzamientos() {
     .then(data => mostrarPeliculas(data.results))
     .catch(error => console.error('Error:', error));
 }
+
+function buscarPelicula() {
+  const searchTerm = document.getElementById('searchInput').value.trim();
+
+  if (searchTerm !== '') {
+    fetch(`https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${searchTerm}`)
+      .then(response => response.json())
+      .then(data => mostrarPeliculas(data.results))
+      .catch(error => console.error('Error:', error));
+  } else {
+    alert('Por favor, ingrese un término de búsqueda válido.');
+  }
+}
