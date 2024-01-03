@@ -1,3 +1,96 @@
+// Crear elementos HTML
+const header = document.createElement('header');
+header.classList.add('header');
+
+const listElement = document.createElement('li');
+listElement.classList.add('navegacion__enlace');
+listElement.style.display = 'flex'; // Usar flexbox para alinear elementos
+listElement.style.justifyContent = 'flex-end'; // Alinear elementos a la derecha
+
+const searchInput = document.createElement('input');
+searchInput.setAttribute('type', 'text');
+searchInput.setAttribute('id', 'searchInput');
+searchInput.setAttribute('placeholder', 'Buscar por tipo o nombre');
+searchInput.style.marginLeft = '5px'; // Añadir margen izquierdo al input
+
+const searchButton = document.createElement('button');
+searchButton.setAttribute('id', 'searchBtn');
+searchButton.textContent = 'Buscar';
+searchButton.style.backgroundColor = '#007bff'; // Cambiar el color de fondo del botón
+searchButton.style.color = '#fff'; // Cambiar el color del texto del botón
+
+const popularesButton = document.createElement('button');
+popularesButton.setAttribute('id', 'popularesBtn');
+popularesButton.textContent = 'Populares';
+popularesButton.style.backgroundColor = '#007bff'; // Cambiar el color de fondo del botón
+popularesButton.style.color = '#fff'; // Cambiar el color del texto del botón
+
+const vistasActualmenteButton = document.createElement('button');
+vistasActualmenteButton.setAttribute('id', 'vistasActualmenteBtn');
+vistasActualmenteButton.textContent = 'Vistas Actualmente';
+vistasActualmenteButton.style.backgroundColor = '#007bff'; // Cambiar el color de fondo del botón
+vistasActualmenteButton.style.color = '#fff'; // Cambiar el color del texto del botón
+
+const mejoresCalificadasButton = document.createElement('button');
+mejoresCalificadasButton.setAttribute('id', 'mejoresCalificadasBtn');
+mejoresCalificadasButton.textContent = 'Mejores Calificadas';
+mejoresCalificadasButton.style.backgroundColor = '#007bff'; // Cambiar el color de fondo del botón
+mejoresCalificadasButton.style.color = '#fff'; // Cambiar el color del texto del botón
+
+const proximosLanzamientosButton = document.createElement('button');
+proximosLanzamientosButton.setAttribute('id', 'proximosLanzamientosBtn');
+proximosLanzamientosButton.textContent = 'Proximos Lanzamientos';
+proximosLanzamientosButton.style.backgroundColor = '#007bff'; // Cambiar el color de fondo del botón
+proximosLanzamientosButton.style.color = '#fff'; // Cambiar el color del texto del botón
+
+
+
+// Agregar el input y el botón al elemento de la lista
+listElement.appendChild(proximosLanzamientosButton);
+listElement.appendChild(popularesButton);
+listElement.appendChild(mejoresCalificadasButton);
+listElement.appendChild(vistasActualmenteButton);
+listElement.appendChild(searchInput);
+listElement.appendChild(searchButton);
+
+
+
+// Agregar la lista al encabezado
+header.appendChild(listElement);
+
+// Agregar el encabezado al cuerpo del documento
+document.body.appendChild(header);
+
+// Estilos CSS dinámicos
+const style = document.createElement('style');
+style.textContent = `
+  .header {
+    background-color: #000;
+    padding: 10px;
+  }
+  .navegacion__enlace {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  #searchBtn, #popularesBtn, #vistasActualmenteBtn, #mejoresCalificadasBtn, #proximosLanzamientosBtn{
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px; /* Añadir un margen derecho al botón */
+  }
+  #searchInput {
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-right: 5px;
+  }
+`;
+document.head.appendChild(style);
+
+
+
 // Creamos h1 como nuestro título principal
 const cineparkTituloElement = document.createElement('h1');
 cineparkTituloElement.textContent = 'CinePark';
