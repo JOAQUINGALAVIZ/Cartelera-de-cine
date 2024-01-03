@@ -16,36 +16,45 @@ searchInput.style.marginLeft = '5px'; // Añadir margen izquierdo al input
 const searchButton = document.createElement('button');
 searchButton.setAttribute('id', 'searchBtn');
 searchButton.textContent = 'Buscar';
-searchButton.style.backgroundColor = '#007bff'; // Cambiar el color de fondo del botón
+searchButton.style.backgroundColor = '#af4c03'; // Cambiar el color de fondo del botón
 searchButton.style.color = '#fff'; // Cambiar el color del texto del botón
 
 const popularesButton = document.createElement('button');
 popularesButton.setAttribute('id', 'popularesBtn');
 popularesButton.textContent = 'Populares';
-popularesButton.style.backgroundColor = '#007bff'; // Cambiar el color de fondo del botón
+popularesButton.style.backgroundColor = '#af4c03'; // Cambiar el color de fondo del botón
 popularesButton.style.color = '#fff'; // Cambiar el color del texto del botón
 
 const vistasActualmenteButton = document.createElement('button');
 vistasActualmenteButton.setAttribute('id', 'vistasActualmenteBtn');
 vistasActualmenteButton.textContent = 'Vistas Actualmente';
-vistasActualmenteButton.style.backgroundColor = '#007bff'; // Cambiar el color de fondo del botón
+vistasActualmenteButton.style.backgroundColor = '#af4c03'; // Cambiar el color de fondo del botón
 vistasActualmenteButton.style.color = '#fff'; // Cambiar el color del texto del botón
 
 const mejoresCalificadasButton = document.createElement('button');
 mejoresCalificadasButton.setAttribute('id', 'mejoresCalificadasBtn');
 mejoresCalificadasButton.textContent = 'Mejores Calificadas';
-mejoresCalificadasButton.style.backgroundColor = '#007bff'; // Cambiar el color de fondo del botón
+mejoresCalificadasButton.style.backgroundColor = '#af4c03'; // Cambiar el color de fondo del botón
 mejoresCalificadasButton.style.color = '#fff'; // Cambiar el color del texto del botón
 
 const proximosLanzamientosButton = document.createElement('button');
 proximosLanzamientosButton.setAttribute('id', 'proximosLanzamientosBtn');
 proximosLanzamientosButton.textContent = 'Proximos Lanzamientos';
-proximosLanzamientosButton.style.backgroundColor = '#007bff'; // Cambiar el color de fondo del botón
+proximosLanzamientosButton.style.backgroundColor = '#af4c03'; // Cambiar el color de fondo del botón
 proximosLanzamientosButton.style.color = '#fff'; // Cambiar el color del texto del botón
 
+// Creamos h1 como nuestro título principal
+const cineparkTituloElement = document.createElement('h1');
+cineparkTituloElement.textContent = 'CinePark';
+cineparkTituloElement.style.textAlign = 'left';
+
+
+// Añadir margen derecho a los botones para separarlos del título
+cineparkTituloElement.style.marginRight = '750px';
 
 
 // Agregar el input y el botón al elemento de la lista
+listElement.appendChild(cineparkTituloElement);
 listElement.appendChild(proximosLanzamientosButton);
 listElement.appendChild(popularesButton);
 listElement.appendChild(mejoresCalificadasButton);
@@ -91,17 +100,15 @@ document.head.appendChild(style);
 
 
 
-// Creamos h1 como nuestro título principal
-const cineparkTituloElement = document.createElement('h1');
-cineparkTituloElement.textContent = 'CinePark';
-cineparkTituloElement.style.textAlign = 'center';
+
+
 
 // Creamos un contenedor div para CinePark
 const contenedorCinepark = document.createElement('div');
 contenedorCinepark.id = 'cinepark';
 
 // Agregamos el título principal y el contenedor 
-document.body.appendChild(cineparkTituloElement);
+// document.body.appendChild(cineparkTituloElement);
 document.body.appendChild(contenedorCinepark);
 
 // Establecemos estilos para el sitio web
@@ -138,10 +145,10 @@ function obtenerDatosTMDB() {
         tituloPelicula.textContent = pelicula.title;
 
         const generoPelicula = document.createElement("p");
-        generoPelicula.innerHTML = "<strong>Género:</strong> " + pelicula.genre_ids.join(', ');
+        generoPelicula.innerHTML = "<strong>Genre:</strong> " + pelicula.genre_ids.join(', ');
 
         const duracion = document.createElement("p");
-        duracion.innerHTML = "<strong>Duración:</strong>" + pelicula.runtime + " min";
+        duracion.innerHTML = "<strong>Runtime:</strong>" + pelicula.runtime + " min";
 
         urlPelicula.appendChild(imgPelicula);
         carteleraDiv.appendChild(urlPelicula);
@@ -180,7 +187,7 @@ redesSocialesSection.style.textAlign = "center";
 
 // La frase del título "siguenos en nuestras redes sociales"
 var tituloRedesSociales = document.createElement("h2");
-tituloRedesSociales.textContent = "Síguenos en nuestras redes sociales:";
+tituloRedesSociales.textContent = "Siguenos en nuestras redes sociales:";
 redesSocialesSection.appendChild(tituloRedesSociales);
 
 // Creando el vínculo de la red social de Facebook
