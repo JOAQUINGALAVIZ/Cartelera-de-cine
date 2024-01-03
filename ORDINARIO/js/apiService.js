@@ -42,3 +42,18 @@ function buscarPelicula() {
     alert('Por favor, ingrese un término de búsqueda válido.');
   }
 }
+
+function obtenerTrailer(movieId) {
+  fetch(`https://api.themoviedb.org/3/movie/${movieId}/videos?api_key=${apiKey}`)
+    .then(response => response.json())
+    .then(data => {
+      if (data.results.length > 0) {
+        const trailerKey = data.results[0].key;
+        const trailerURL = `https://www.youtube.com/watch?v=${trailerKey}`;
+        window.open(trailerURL);
+      } else {
+        alert("Trailer no encontrado para esta película.");
+      }
+    })
+    .catch(error => console.error('Error:', error));
+}

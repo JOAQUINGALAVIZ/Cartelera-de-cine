@@ -39,6 +39,10 @@ function mostrarPeliculas(peliculas) {
           carteleraDiv.appendChild(tituloPelicula);
           carteleraDiv.appendChild(generoPelicula);
           carteleraDiv.appendChild(duracionPelicula);
+          
+          carteleraDiv.addEventListener("click", function() {
+            obtenerTrailer(pelicula.id);
+          });
   
           cineparkDiv.appendChild(carteleraDiv);
           agregarEventosMouse(carteleraDiv);
@@ -46,4 +50,10 @@ function mostrarPeliculas(peliculas) {
         .catch(error => console.error('Error:', error));
     }
   }
+  
+
+
+
+
+
   
