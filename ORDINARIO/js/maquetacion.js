@@ -46,10 +46,10 @@ proximosLanzamientosButton.style.color = '#fff'; // Cambiar el color del texto d
 // Creamos h1 como nuestro título principal
 const cineparkTituloElement = document.createElement('h1');
 cineparkTituloElement.textContent = 'CinePark';
-cineparkTituloElement.style.textAlign = 'left';
+cineparkTituloElement.style.textAlign = 'right';
 
 // Añadir margen derecho a los botones para separarlos del título
-cineparkTituloElement.style.marginRight = '750px';
+cineparkTituloElement.style.marginRight = '350px';
 
 // Agregar el input y el botón al elemento de la lista
 listElement.appendChild(cineparkTituloElement);
